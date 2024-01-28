@@ -25,6 +25,11 @@ public class Gamepad
 			_curves[axis] = Curve.Linear;
 	}
 
+	public void SetCurve(Axis axis, Curve curve)
+	{
+		_curves[axis] = curve;
+	}
+
 	/// <summary>
 	/// Update the Gamepad to receive new button presses and axis movements
 	/// </summary>
